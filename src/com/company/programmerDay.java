@@ -21,7 +21,7 @@ public class programmerDay {
         else {
             day = 13;
         }
-        output.print(String.format("%02d/%02d/%04d", day,month,year));
+        output.printf("%02d/%02d/%04d", day,month,year);
         output.flush();
     }
 }
