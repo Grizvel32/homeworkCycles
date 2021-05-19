@@ -16,18 +16,16 @@ public class programmerDay {
 
         if (year % 400 == 0) {
             day = 12;
-            output.println(day+"/"+"0"+month+"/"+year);
+            output.print(String.format("%02d/%02d/%04d", day,month,year));
         }
         else if (year % 4 == 0 && year%100 !=0) {
             day = 12;
-            output.println(day+"/"+"0"+month+"/"+year);
+            output.print(String.format("%02d/%02d/%04d", day,month,year));
         }
         else {
             day = 13;
-            output.println(day+"/"+"0"+month+"/"+year);
+            output.printf(String.format("%02d/%02d/%04d", day,month,year));
         }
-
-
         output.flush();
     }
 }
