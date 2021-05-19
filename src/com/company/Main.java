@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int radiusField, radiusCircle1, radiusCircle2;
+        int radiusField, radiusCircle1, radiusCircle2,radiusCircles;
 
         Scanner input = new Scanner(System.in);
         PrintWriter output = new PrintWriter(System.out);
@@ -15,6 +15,7 @@ public class Main {
         radiusField = input.nextInt();
         radiusCircle1 = input.nextInt();
         radiusCircle2 = input.nextInt();
+        radiusCircles = radiusCircle1+radiusCircle2;
 
         if(radiusField >= (radiusCircle1+radiusCircle2)){
 
