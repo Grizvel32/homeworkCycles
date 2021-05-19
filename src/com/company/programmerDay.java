@@ -14,18 +14,14 @@ public class programmerDay {
 
         year = input.nextInt();
 
-        if (year % 400 == 0) {
+        if ((year % 400 == 0) ||
+                (year % 4 == 0 && year%100 !=0)){
             day = 12;
-            output.print(String.format("%02d/%02d/%04d", day,month,year));
-        }
-        else if (year % 4 == 0 && year%100 !=0) {
-            day = 12;
-            output.print(String.format("%02d/%02d/%04d", day,month,year));
         }
         else {
             day = 13;
-            output.print(String.format("%02d/%02d/%04d", day,month,year));
         }
+        output.print(String.format("%02d/%02d/%04d", day,month,year));
         output.flush();
     }
 }
